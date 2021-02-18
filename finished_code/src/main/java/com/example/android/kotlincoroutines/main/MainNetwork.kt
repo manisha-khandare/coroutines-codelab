@@ -27,6 +27,7 @@ private val service: MainNetwork by lazy {
             .addInterceptor(SkipNetworkInterceptor())
             .build()
 
+
     val retrofit = Retrofit.Builder()
             .baseUrl("http://localhost/")
             .client(okHttpClient)

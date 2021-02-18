@@ -38,7 +38,7 @@ class MainViewModel(private val repository: TitleRepository) : ViewModel() {
         /**
          * Factory for creating [MainViewModel]
          *
-         * @param arg the repository to pass to [MainViewModel]
+         * @param arg the repository 1to pass to [MainViewModel]
          */
         val FACTORY = singleArgViewModelFactory(::MainViewModel)
     }

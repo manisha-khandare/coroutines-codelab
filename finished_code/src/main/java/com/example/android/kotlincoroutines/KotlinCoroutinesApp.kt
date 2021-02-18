@@ -39,6 +39,7 @@ class KotlinCoroutinesApp : Application() {
     override fun onCreate() {
         super.onCreate()
         setupWorkManagerJob()
+
     }
 
     /**

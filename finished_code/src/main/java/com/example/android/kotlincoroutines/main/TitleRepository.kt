@@ -73,6 +73,7 @@ class TitleRepository(val network: MainNetwork, val titleDao: TitleDao) {
         val scope = CoroutineScope(Dispatchers.Default)
         scope.launch {
             try {
+
                 refreshTitle()
                 titleRefreshCallback.onCompleted()
             } catch (throwable: Throwable) {

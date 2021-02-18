@@ -58,4 +58,5 @@ class RefreshMainDataWork(context: Context, params: WorkerParameters, private va
         }
 
     }
+
 }
