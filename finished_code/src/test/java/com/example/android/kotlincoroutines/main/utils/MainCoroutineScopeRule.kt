@@ -67,6 +67,7 @@ class MainCoroutineScopeRule(val dispatcher: TestCoroutineDispatcher = TestCorou
         TestCoroutineScope by TestCoroutineScope(dispatcher) {
     override fun starting(description: Description?) {
         super.starting(description)
+
         // If your codebase allows the injection of other dispatchers like
         // Dispatchers.Default and Dispatchers.IO, consider injecting all of them here
         // and renaming this class to `CoroutineScopeRule`

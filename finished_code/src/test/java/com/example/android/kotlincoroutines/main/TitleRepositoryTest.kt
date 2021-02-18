@@ -39,6 +39,7 @@ class TitleRepositoryTest {
                 titleDao
         )
 
+
         subject.refreshTitle()
         assertThat(titleDao.nextInsertedOrNull()).isEqualTo("OK")
     }

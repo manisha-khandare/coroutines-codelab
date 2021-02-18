@@ -45,6 +45,7 @@ class MainViewModelTest {
     @get:Rule
     val coroutineScope = MainCoroutineScopeRule()
 
+
     lateinit var subject: MainViewModel
 
     @Before
